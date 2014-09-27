@@ -3,19 +3,21 @@ Angular Test
 
 Hello and welcome!
 
-You are provided with the current repository (https://github.com/IvanFarms/test) which is published to http://test.ivanfarms.com/, and with an API server by http://test.ivanfarms.com/api. 
+You are provided with the current repository (https://github.com/IvanFarms/test) which is published to http://test.ivanfarms.com/, and with an API server at http://test.ivanfarms.com/api. 
 
-Your task is to integrate the two following pages with angular:
+Your task is to integrate the three following pages with angular: home.html, signin.html, signup.html
 
 The folowing use cases should be covered:
-- the main page (home) is
-- click on signup openn the signup page and the user can enter details
-- on user signup page, cancel return to the main page and do nothing
-- after the name is entered, an API call is made to GET /user/&name=... if the call is return an object, an error message must be displayed (name already registered) 
-- on user signup page, ok creates the user by an API call of the form POST /createUser with data provided in json
-- click on signin opens the signin page and ask for the details
-- on user signin page, cancel return to the main page and do nothing
-- on user signin page, ok launch an API call of the form GET /user with data provided in json and you should go back to the usersignup page and display the user data that could be edited and updated through a call to PUT /user (instead of the POST /creatuser when no user is found.
+- the landing home page is home.html
+- on the home page, clicking on "sign up" opens the signup page where the user can enter details
+- on the signup page, back return to the main page and do nothing
+- on the signup page, after the name (say xxx) is entered, an API call is made to GET /user/&name=xxx. if the call returns an object, a message is displayed immediately "name xxx is already registered"
+- on the signup page, clicking on "sign up" launch an API call of the form POST /createUser with data provided in json format; if the call returns an error, it is display and the user stays on the page. Otherwise, got back to the home page.
+- on the home page, clicking on "sign in" opens the signin page 
+- on the signin page, back returns to the main page and do nothing
+- on the signin page, clicking on "sign in" launchs an API call of the form POST /verifyUser with email and password provided in json 
+   - If the verifyUser call returns true and a token, the user is redirect to the signup page and a call to GET /user/email retrieves the corresponding data. name and password can be edited and updated through a call to PUT /user/email (instead of the POST /creatuser when the user doesn't exists). The email cannot be changed.
+   - if the verifyUser call returns false, the user stays and a message "Incorrect email or password is displayed".
 
 You should create a relevant angulat modular architecture which would be able to handle new functions (routes).
 
