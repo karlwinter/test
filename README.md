@@ -33,7 +33,7 @@ You shouldn't change any of the current sub-directory (css, js, images, fonts). 
 
 Once your app works locally, creates a pull request that includes your name or oDesk ID.
 
-Note that some API calls may not work. Please report the ones you had issues with and the specific erroso messages.
+Note that some API calls may not work. Please report in the PR the calls you had issues with and the corresponding error messages.
 
 This repository is provided for testing purposes only. It is not intended to work as-is as an actual app, where calls and workflow would be different. All code, text, HTML, CSS, images, and any other assets and examples are the property of ivanfarms technologies.  
 
