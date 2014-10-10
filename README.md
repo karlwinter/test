@@ -3,7 +3,7 @@ Angular Test
 
 Hello and welcome!
 
-You are provided with the current repository (https://github.com/IvanFarms/test) which is published to http://test.ivanfarms.com/, and with an API server at http://api-test.ivanfarms.com/. 
+You are provided with the current repository (https://github.com/IvanFarms/test) which is published to http://test.ivanfarms.com/test, and with an API server at http://api-test.ivanfarms.com/. 
 
 Your task is to integrate the three following pages using angular: home.html, signin.html, signup.html
 
