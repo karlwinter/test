@@ -1,0 +1,8 @@
+# Mac OSX file
+.DS_Store
+
+# WebStorm project files
+.idea
+
+# Bower components
+bower_components
