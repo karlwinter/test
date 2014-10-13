@@ -1,0 +1,9 @@
+{
+  "name": "IvanFarmsTest",
+  "version": "0.1",
+  "dependencies": {
+    "angular": "1.2.x",
+    "lodash": "~2.4.1",
+    "angular-ui-router": "~0.2.11"
+  }
+}
