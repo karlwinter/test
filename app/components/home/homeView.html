@@ -1,0 +1,20 @@
+<div class="bgLogin">
+    <div class="userDialogWrapper">
+        <div class="loginLogo">
+            <img src="images/loginLogo.png" class="logoImg">
+            <div class="logoText">
+                Ivan Farm technologies
+            </div>
+        </div>
+
+        <form class="signIn" id="signNavigate">
+            <!-- Alert -->
+            <div class="alert alert-warning alert" role="alert" ng-show="alert">
+                {{alert}}
+            </div>
+
+            <button type="button" class="signIn" data-ng-click="signin()">Sign In</button>
+            <button type="button" class="signUp" data-ng-click="signup()">Sign Up</button>
+        </form>
+    </div>
+</div>
