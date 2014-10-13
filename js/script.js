@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	new OffCanvasMenuController({
+	/*new OffCanvasMenuController({
 		$menu: $('#left-menu'),
 		$menuToggle: $('#left-menu-toggle'),
 		menuExpandedClass: 'show-left-menu',
@@ -12,9 +12,9 @@ $(document).ready(function(){
 		$menuToggle: $('#right-menu-toggle'),
 		menuExpandedClass: 'show-right-menu',
 		position: 'right'
-	});
+	});*/
 				
-	$('#activityTable').stacktable({myClass:'stacktable small-only'});
+	// $('#activityTable').stacktable({myClass:'stacktable small-only'});
 
 	$(".toggleFields").on("click", function(){
 		$("#fields").toggle();
@@ -84,7 +84,7 @@ $(document).ready(function(){
 	});
 
 	//tablesorter plugin
-	 $("#activityTable").tablesorter();
+	// $("#activityTable").tablesorter();
 
 });
 	
@@ -94,7 +94,7 @@ function glDatePicker() {
 
 
 function startDatepickers() {
-	$('#editFieldModal .modal-dialog .form-control.date').datepicker({
+	/*$('#editFieldModal .modal-dialog .form-control.date').datepicker({
 		format: "M dd, yyyy",
 		minViewMode: 0, 
 		autoclose: true, 
@@ -124,36 +124,36 @@ function startDatepickers() {
 		autoclose: true, 
 		forceParse: true
 	});
-	/*$('#infoPlantModal .modal-dialog .form-control.date').datepicker({
+	*//*$('#infoPlantModal .modal-dialog .form-control.date').datepicker({
 		format: "M dd, yyyy",
 		minViewMode: 0, 
 		autoclose: true, 
 		forceParse: true
-	});*/
+	});*//*
 	$('#editFertilizerModal .modal-dialog .form-control.date').datepicker({
 		format: "M dd, yyyy",
 		minViewMode: 0, 
 		autoclose: true, 
 		forceParse: true
 	});
-	/*$('#infoFertilizerModal .modal-dialog .form-control.date').datepicker({
+	*//*$('#infoFertilizerModal .modal-dialog .form-control.date').datepicker({
 		format: "M dd, yyyy",
 		minViewMode: 0, 
 		autoclose: true, 
 		forceParse: true
-	});*/
+	});*//*
 	$('#editHarvestModal .modal-dialog .form-control.date').datepicker({
 		format: "M dd, yyyy",
 		minViewMode: 0, 
 		autoclose: true, 
 		forceParse: true
 	});
-	/*$('#infoHarvestModal .modal-dialog .form-control.date').datepicker({
+	*//*$('#infoHarvestModal .modal-dialog .form-control.date').datepicker({
 		format: "M dd, yyyy",
 		minViewMode: 0, 
 		autoclose: true, 
 		forceParse: true
-	});*/
+	});*//*
 	
 	$('#editWaterModal .modal-dialog .form-control.date').datepicker({
 		format: "M dd, yyyy",
@@ -161,17 +161,17 @@ function startDatepickers() {
 		autoclose: true, 
 		forceParse: true
 	});
-	/*$('#infoWaterModal .modal-dialog .form-control.date').datepicker({
+	*//*$('#infoWaterModal .modal-dialog .form-control.date').datepicker({
 		format: "M dd, yyyy",
 		minViewMode: 0, 
 		autoclose: true
-	});*/
+	});*//*
 	$('#addActivitySpecModal .modal-dialog .form-control.date').datepicker({
 		format: "M dd, yyyy",
 		minViewMode: 0, 
 		autoclose: true, 
 		forceParse: true
-	});
+	});*/
 	
 	/*$('#dateZebra').Zebra_DatePicker({
 	    format: 'M d, Y'
